@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 57.762 s <<< FAILURE! - in TestSuite
+clickViews(tests.FirstTestCase)  Time elapsed: 19.447 s  <<< FAILURE!
+java.lang.AssertionError: phone number text box takes text Assertion expected [] but found [rgrgrg]
+	at tests.FirstTestCase.clickViews(FirstTestCase.java:36)
+
