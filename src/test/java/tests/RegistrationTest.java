@@ -6,7 +6,7 @@ import Pages.RegistrationPage;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class FirstTestCase extends TestBase{
+public class RegistrationTest extends TestBase{
 
     IntroPage ip;
     MenuPage mp;
