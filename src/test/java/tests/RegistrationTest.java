@@ -23,8 +23,8 @@ public class RegistrationTest extends TestBase{
         return data;
     }
 
-    @Test(dataProvider = "TestData")
-    public void clickViews(String fullName, String phoneNumber, String emailAddress, String pass) {
+    @Test(dataProvider = "TestData", groups = {"Regression"})
+    public void userRegister(String fullName, String phoneNumber, String emailAddress, String pass) {
 
         ip = new IntroPage(driver);
         mp = new MenuPage(driver);

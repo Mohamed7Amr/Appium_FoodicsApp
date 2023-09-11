@@ -36,9 +36,6 @@ public class IntroPage {
 
     public void clickProceedBtns()
     {
-//            driver.findElement(AppiumBy.id("com.foodicsjordan.android:id/proceed")).click();
-//        driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id='com.foodicsjordan.android:id/proceed']")).click();
-//        driver.findElement(AppiumBy.id("com.foodicsjordan.android:id/proceed")).click();
         proceedBtn.click();
         continueBtn1.click();
         continueBtn2.click();

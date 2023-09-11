@@ -21,7 +21,7 @@ public class TestBase {
     UiAutomator2Options options;
     AppiumDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"Regression"})
     public void setUpEnvironment() throws MalformedURLException {
 
         /**
@@ -29,11 +29,6 @@ public class TestBase {
          * and UiAutomator2Options class, but there are specific methods that exist only in the later class(UiAutomator2)
          * which can take the values of the capabilities directly without mentioning the name of each capability
          */
-//        options.setCapability("platformName","Android");
-//        options.setCapability("platformVersion","11.0");
-//        options.setCapability("deviceName","AmrEmulator");
-//        options.setCapability("automationName","UiAutomator2");
-//        options.setCapability("app","D:/Appium/AndroidAPKs/apkDemo/ApiDemos-debug.apk");
 
 //        service = new AppiumServiceBuilder()
 //                .withAppiumJS(new File("C:\\Users\\moham\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
@@ -52,7 +47,7 @@ public class TestBase {
 
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"Regression"})
     public void clearUpEnvironment()
     {
         driver.quit();
